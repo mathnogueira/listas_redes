@@ -23,6 +23,11 @@
 
 4) **Como se obtém endereços IP? Como é garantido que não haja dois, ou mais, hosts na internet com o mesmo endereço IP?**
 
+    O Endereço de IP pode ser obtido de duas formas:
+
+    - O administrador do sistema pode definir o endereço de IP do equipamento.
+    - O endereço de IP pode ser definido por um servidor DHCP de maneira dinâmica.
+
 5) **Uma empresa possui 230 máquinas, mas apenas 110 endereços IP válidos. O que essa empresa pode fazer para colocar todas as máquinas na Internet? Descreva detalhadamente.**
 
 6) **Por que existe o IP versão 6 (IPv6)? Descreva pelo menos três diferenças para o IPv4**
