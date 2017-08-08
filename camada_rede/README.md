@@ -51,9 +51,11 @@
     ```
     11111111.11111111.11111111.10000000
     ```
-    Podemos notar que o ultimo byte contém apenas 1 bit preenchido com 1, portanto, podemos fizer que temos ![equation](http://latex.codecogs.com/gif.latex?2^1) subredes que contém ![equation](http://latex.codecogs.com/gif.latex?2^7) endereços de IP em cada rede.  
+    Podemos notar que o ultimo byte contém apenas 1 bit preenchido com 1, portanto, podemos fizer que temos ![equation](http://latex.codecogs.com/gif.latex?2^1) subredes que contém ![equation](http://latex.codecogs.com/gif.latex?2^7) endereços de IP em cada sub-rede.  
 
 8) **Defina uma máscara de rede para ser usada com um endereço classe A de forma a subdividi-la em 164 sub-redes. É possível se chegar a exatamente 164 sub-redes? Quantos hosts são possíveis em cada rede criada?**
+
+    Não é possível alcançar exatamento 164 sub-redes, pois o número de subredes é um na forma ![equation](http://latex.codecogs.com/gif.latex?2^n). Uma máscara que consegue ser dividida em 256 sub-redes pode ser usada para criar uma rede para ser dividida em 164 sub-redes. A máscara `255.255.0.0/16` é capaz de criar até 256 sub-redes capazes de comportar 254 endereços de IP em cada (descontando os endereços da rede e de broadcast)
 
 9) **Uma empresa recebeu de seu provedor a faixa de endereços 126.237.89.0/14. A empresa precisa dividir essa faixa entre seus 12 departamentos/setores. Descreva como poderia ser a rede dessa empresa, mostre os endereços de rede utilizados, bem como 2 endereços IP válidos para cada uma dessas sub-redes. Pode-se fazer um desenho da rede para melhor visualização.**
 
