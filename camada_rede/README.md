@@ -19,7 +19,7 @@
 
 3) **Qual o tamanho do cabeçalho IP? Quais de seus campos são utilizados na remontagem de datagramas fragmentados?**
 
-    O IPv4 contém um cabeçalho de 20 a 32 bytes contendo 13 ou 14 campos -- dependendo da inclusão do campo **options** -- entre esses campos, os campos **Identification** (16 bits, identifica o grupo de datagramas IP), **Fragment Offset** (13 bits, informa quantos bits devem ser ignorados até o primeiro bit do conteúdo do datagrama) são utilizados na remontagem dos datagramas IP **[Talvez faltem campos aqui]**
+    O IPv4 contém um cabeçalho de 20 a 32 bytes contendo 13 ou 14 campos -- dependendo da inclusão do campo **options** -- entre esses campos, os campos **Identification** (16 bits, identifica o grupo de datagramas IP), **Fragment Offset** (13 bits, informa qual é o número do primeiro byte do datagrama) são utilizados na remontagem dos datagramas IP.
 
 4) **Como se obtém endereços IP? Como é garantido que não haja dois, ou mais, hosts na internet com o mesmo endereço IP?**
 
@@ -28,9 +28,17 @@
     - O administrador do sistema pode definir o endereço de IP do equipamento.
     - O endereço de IP pode ser definido por um servidor DHCP de maneira dinâmica.
 
+    A internet é formada por sub-redes. Cada sub-rede recebe uma faixa de IPs que ela pode utilizar, e a sub-rede fica responsável por distribuir os ips de forma que nenhum dispositivo de sua rede tenha um IP igual a outro dispositivo da mesma rede. Como toda faixa de IP é única, se todas as sub-redes manterem o controle de seus IPs, não haverá chance de existir IPs duplicados na internet. **[Não tenho certeza nessa resposta]**
+
 5) **Uma empresa possui 230 máquinas, mas apenas 110 endereços IP válidos. O que essa empresa pode fazer para colocar todas as máquinas na Internet? Descreva detalhadamente.**
 
+    Pode-se utilizar alguns *Network Address Translation* (NATs) para fazer a tradução dos IPs da rede local. O NAT funciona da seguinte maneira, um dispositivo qualquer identificado pelo IP (x.x.x.x:yy) envia um pacote, esse pacote passa pelo NAT, e este faz a tradução do IP, substituindo o endereço do dispositivo pelo seu próprio IP e porta e armazena em sua tabela a relação entre o IP:porta do NAT e o IP:porta do dispositivo. Após fazer isso, o NAT envia a requisição. Quando um pacote chega para um dispositivo da rede que contém o NAT, o NAT recebe esse pacote e faz a substituição do IP:porta pelo IP:porta do dispositivo (utilizando sua tabela de tradução) e repassa o pacote ao dispositivo.
+
 6) **Por que existe o IP versão 6 (IPv6)? Descreva pelo menos três diferenças para o IPv4**
+
+    O IPv4 suporta apenas 4.3 bilhões de IPs, e hoje existem mais dispositivos do que IPs válidos, portanto, o IPv6 foi criado para que novos dispositivos possam se conectar à internet.
+
+    **[Adicionar 3 diferenças]**
 
 7) **Se a máscara 255.255.255.128 for usada com um endereço classe B, quantas sub-redes são criadas? Quantos hosts são possíveis em cada uma dessas sub-redes?**
 
