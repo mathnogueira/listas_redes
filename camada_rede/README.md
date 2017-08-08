@@ -51,7 +51,7 @@
     ```
     11111111.11111111.11111111.10000000
     ```
-    Podemos notar que o ultimo byte contém apenas 1 bit preenchido com 1, portanto, podemos fizer que temos ![equation](http://latex.codecogs.com/gif.latex?2^1) subredes que contém ![equation](http://latex.codecogs.com/gif.latex?2^(8-1)) endereços de IP em cada rede.  
+    Podemos notar que o ultimo byte contém apenas 1 bit preenchido com 1, portanto, podemos fizer que temos ![equation](http://latex.codecogs.com/gif.latex?2^1) subredes que contém ![equation](http://latex.codecogs.com/gif.latex?2^7) endereços de IP em cada rede.  
 
 8) **Defina uma máscara de rede para ser usada com um endereço classe A de forma a subdividi-la em 164 sub-redes. É possível se chegar a exatamente 164 sub-redes? Quantos hosts são possíveis em cada rede criada?**
 
