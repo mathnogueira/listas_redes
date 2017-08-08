@@ -59,6 +59,48 @@
 
 9) **Uma empresa recebeu de seu provedor a faixa de endereços 126.237.89.0/14. A empresa precisa dividir essa faixa entre seus 12 departamentos/setores. Descreva como poderia ser a rede dessa empresa, mostre os endereços de rede utilizados, bem como 2 endereços IP válidos para cada uma dessas sub-redes. Pode-se fazer um desenho da rede para melhor visualização.**
 
+    Fazendo a divisão de bits da máscara, obtemos o número `1111110.11101100.00000000.00000000`, que é equivalente a `126.236.0.0/14`. Para dividr a faixa para 12 departamentos, serão necessários 4 bits para representar o número do departamento, portanto, a nova máscara da rede será: `1111110.111011xx.xx000000.00000000`.
+
+    Ips válidos para cada departamento:
+        
+        01) Endereço de rede:        126.236.0.0
+            Endereço de broadcast:   126,236.63.255
+
+        02) Endereço de rede:        126.236.64.0
+            Endereço de broadcast:   126.236.127.255
+
+        03) Endereço de rede:        126.236.128.0
+            Endereço de broadcast:   126.236.191.255
+
+        04) Endereço de rede:        126.236.192.0
+            Endereço de broadcast:   126.236.255.255
+
+        05) Endereço de rede:        126.237.0.0
+            Endereço de broadcast:   126.237.63.255
+
+        06) Endereço de rede:        126.237.64.0
+            Endereço de broadcast:   126.237.127.255
+
+        07) Endereço de rede:        126.237.128.0
+            Endereço de broadcast:   126.237.191.255
+
+        08) Endereço de rede:        126.237.192.0
+            Endereço de broadcast:   126.237.255.255
+
+        09) Endereço de rede:        126.238.0.0
+            Endereço de broadcast:   126.238.63.255
+
+        10) Endereço de rede:        126.238.64.0
+            Endereço de broadcast:   126.238.127.255
+
+        11) Endereço de rede:        126.238.128.0
+            Endereço de broadcast:   126.238.191.255
+
+        12) Endereço de rede:        126.238.192.0
+            Endereço de broadcast:   126.238.255.255
+
+
+
 10) **Descreva como pode ocorrer perda de pacotes me portas de entrada. Descreva como a perda de pacotes pode ser eliminada em portas de entrada (sem usar buffers infinitos).**
 
 11) **Em uma rede local, que funciona apenas internamente a uma instituição, o técnico responsável determinou endereços IPs para as máquinas da forma que lhe pareceu melhor, sem respeitar endereços externos. Assim, uma das interfaces dessa rede recebeu endereço: 192.168.141.5/18.**
