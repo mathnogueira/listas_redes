@@ -38,9 +38,20 @@
 
     O IPv4 suporta apenas 4.3 bilhões de IPs, e hoje existem mais dispositivos do que IPs válidos, portanto, o IPv6 foi criado para que novos dispositivos possam se conectar à internet.
 
-    **[Adicionar 3 diferenças]**
+    Diferenças:
+
+        1. Mudança no cabeçalho para incorporar mecanismos de qualidade de serviço.
+        2. Remoção do checksum para diminuir tempo de processamento
+        3. Campo **options** é adicionado em cabeçalhos suplementares indicados pelo campo **Next header** para diminuir tamanho gasto pelo cabeçalho no datagrama.
+
 
 7) **Se a máscara 255.255.255.128 for usada com um endereço classe B, quantas sub-redes são criadas? Quantos hosts são possíveis em cada uma dessas sub-redes?**
+
+    Fazendo a distribuição dos bits da máscara, obtemos:
+    ```
+    11111111.11111111.11111111.10000000
+    ```
+    Podemos notar que o ultimo byte contém apenas 1 bit preenchido com 1, portanto, podemos fizer que temos ![equation](http://latex.codecogs.com/gif.latex?2^1) subredes que contém ![equation](http://latex.codecogs.com/gif.latex?2^(8-1)) endereços de IP em cada rede.  
 
 8) **Defina uma máscara de rede para ser usada com um endereço classe A de forma a subdividi-la em 164 sub-redes. É possível se chegar a exatamente 164 sub-redes? Quantos hosts são possíveis em cada rede criada?**
 
