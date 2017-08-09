@@ -133,12 +133,12 @@
 12) **Existem sites e servidores que podem ser acessados como IPv4 e/ou IPv6. Como os roteadores lidam com isso?**
     Podemos citar três principais mecanismo para lidar com tal transição, sendo eles:
     ```
-    Pilha dupla: consiste na convivência do IPv4 e do IPv6 nos mesmos equipamentos, de forma nativa
+    **Pilha dupla:** consiste na convivência do IPv4 e do IPv6 nos mesmos equipamentos, de forma nativa
     simultâneamente. Essa técnica é a técnica padrão escolhida para a transição para IPv6 na Internet e deve ser
     usada sempre que possível;
-    Tunelamento: IPv6 transportado dentro de pacotes IPv4 entre roteadores IPv4;
-    Tradução:Permitem que equipamentos usando IPv6 comuniquem-se com outros que usam IPv4, por meio da conversão
-    dos pacotes.
+    **Tunelamento:** IPv6 transportado dentro de pacotes IPv4 entre roteadores IPv4;
+    **Tradução:** Permitem que equipamentos usando IPv6 comuniquem-se com outros que usam IPv4, por meio da
+    conversão dos pacotes.
     ```
 
 13) **Compare e aponte as diferenças entre os algoritmos de roteamento de estado de enlace e por vetor de distâncias.**
