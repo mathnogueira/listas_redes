@@ -142,9 +142,13 @@
     ```
 
 13) **Compare e aponte as diferenças entre os algoritmos de roteamento de estado de enlace e por vetor de distâncias.**
+    **IREI FAZER ENTRE ÀS 7 ATÈ AS 9 hrs da manhã **
 
 14) **Por que devo agrupar os roteadores em sistemas autônomos.**
+    **IREI FAZER ENTRE ÀS 7 ATÈ AS 9 hrs da manhã **
 
 15) **Por que são usados protocolos inter-AS e intra-AS diferentes na Internet?**
+    **IREI FAZER ENTRE ÀS 7 ATÈ AS 9 hrs da manhã **
 
 16) **Explique as técnicas de inundação não controlada, inundação controlada e spanning tree.**
+    **IREI FAZER ENTRE ÀS 7 ATÈ AS 9 hrs da manhã **
