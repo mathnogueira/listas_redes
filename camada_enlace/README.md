@@ -3,6 +3,8 @@
 
 1) **Descreva sucintamente 5 (cinco) serviços que a Camada de Enlace pode desempenhar.**
 
+    **RESPOSTA INCOMPLETA**
+
     1. Controle de fluxo
     2. Detecção de erros
     3. Correção de erros sem retransmissão
@@ -15,11 +17,15 @@
 
 3) **Foram estudadas três grandes classes de protocolos de múltiplo acesso. Quais são essas três classes e quais as vantagens e desvantagens de cada uma delas?**
 
+    **RESPOSTA INCOMPLETA**
+
     1. ALOHA
     2. CSMA
     3. Token Ring
 
 4) **Para se atingir um protocolo de múltiplo acesso ideal, foram destacados 4 pontos. Quais desses pontos o protocolo Aloha Segmentado (slotted aloha) atende? Quais desses pontos o protocolo Token passing atende?**
+
+    **RESPOSTA INCOMPLETA**
 
     1. Quando um nó quer transmitir, ele pode enviar a uma taxa R;
     2. Quando M nós querem transmitir, cada um envia a uma taxa média R/M;
@@ -57,5 +63,9 @@
 12) **Imagine um cenário em que estariam envolvidas 4 áreas de gerenciamento OSI, destacadas em sala. Descreva como essas áreas se relacionam na solução de um problema.**
 
 13) **Faça uma descrição sucinta dos conceitos MPLS e VLAN. Evidencie as diferenças entre esses conceitos.**
+
+    **RESPOSTA INCOMPLETA**
+
+    VLAN é um recurso incluso em alguns switches que permite que grupos de portas se comportem como sub-redes totalmente separadas. 
 
 14) **Compare o funcionamento do MPLS com redes de circuitos virtuais.**
