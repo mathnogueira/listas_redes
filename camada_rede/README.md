@@ -148,10 +148,12 @@
     ```
 
 14) **Por que devo agrupar os roteadores em sistemas autônomos.**
+
     Imagine um cenário onde exista 200 milhões de roteadores em uma mesma rede, tal quantidade tornaria impossível armazenar todos os destinos numa única tabela de rotas e as  mudanças na tabela de rotas irão congestionar os enlaces, por esse motivos e outros devo agrupar os roteadores em sistemas autônomos, permitindo que cada AS trabalhe como uma sub-rede idependente, onde, roteadores no mesmo AS rodam o mesmo protocolo de roteamento e roteadores em diferentes AS podem rodar diferentes protocolos de roteamento, permitindo que cada administração de rede pode controle o roteamento em sua própria rede.
  
 
 15) **Por que são usados protocolos inter-AS e intra-AS diferentes na Internet?**
+   
     Os protocolos inter-AS são usada dentro de um mesmo AS e em suma principal papel é estabelecer  entradas para destinos externos de uma AS (AS diferentes), por outro lado os protocolos intra-AS além de possuirem papel de estabelecer entradas para destinos externos também estabelece entradas para destinos internos (Dentro de uma mesma AS). 
     
     Podemos citar como principal motivo de ser usado protocolos diferentes para roteamento inter-AS e intra-AS o fato de que a administração de rede quer ter controle sobre como seu tráfego é roteado e sobre quem roteia através da sua rede logo usára um protocolo Inter-AS baseado em suas políticas, por outro lado o roteamento inter-AS possuem administração única (Dentro de uma mesma AS), então não são necessárias políticas de decisão, logo a maior preocupação nesse caso seria desempenho, por esses motivos e outros nasce a necessdiade de usar protocolos diferente para roteamento inter-AS e intra-AS.
