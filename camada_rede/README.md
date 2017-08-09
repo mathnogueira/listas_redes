@@ -101,7 +101,9 @@
 
 
 
-10) **Descreva como pode ocorrer perda de pacotes me portas de entrada. Descreva como a perda de pacotes pode ser eliminada em portas de entrada (sem usar buffers infinitos).**
+10) **Descreva como pode ocorrer perda de pacotes en portas de entrada. Descreva como a perda de pacotes pode ser eliminada em portas de entrada (sem usar buffers infinitos).**
+
+    A perda de pacotes em portas de entrada ocorre quando a rede interna transfere mais pacotes do que o switch consegue enviar para a rede externa. Por esse motivo, o `throughput` não é alto o suficiente e, eventualmente, o buffer de pacotes fica cheio e o switch é forçado a rejeitar pacotes na porta de entrada. Isso causa a perda de pacotes. **[Como resolver?]**
 
 11) **Em uma rede local, que funciona apenas internamente a uma instituição, o técnico responsável determinou endereços IPs para as máquinas da forma que lhe pareceu melhor, sem respeitar endereços externos. Assim, uma das interfaces dessa rede recebeu endereço: 192.168.141.5/18.**
     
@@ -110,6 +112,23 @@
         b) O endereço 192.168.130.1/18 está na mesma rede que a máquina citada acima? E o endereço 192.168.127.1/18? Explique.
 
         c) Devido ao acréscimo de várias novas máquinas, a instituição resolveu dividir a rede citada acima em três sub-redes. Estabeleça endereços de rede para essas 3 sub-redes. Estabeleça pelo menos 2 endereços IP pertencentes a cada uma dessas sub-redes.
+    
+    Fazendo a distribuição de bits do endereço, temos: `11000000.10101000.10000000.00000000/18` e sabemos que existem ![equation](http://latex.codecogs.com/gif.latex?2^2) subredes, pois temos 2 bits para representar o conjunto de subredes. O endereço `192.168.141.5` se encontra na terceira sub-rede (bits 10).
+
+        a) 192.168.128.1, 192.168.128.2, 192.168.128.3
+
+        b) Não, pois quando se olha os bits do ip: 11000000.10101000.10000010.00000101, podemos notar que os bits 16 e 17 são 10, enquanto os bits 16 e 17 do ip 192.168.127.1 são 01.
+
+        c) Máscara: 192.168.128.0/20
+            
+            1. Endereço da rede:        192.168.128.0
+               Endereço de broadcast:   192.168.143.255
+
+            2. Endereço de rede:        192.168.144.0
+               Endereço de broadcast:   192.168.159.255
+
+            3. Endereço de rede:        192.168.160.0
+               Endereço de broadcast:   192.168.175.255
 
 12) **Existem sites e servidores que podem ser acessados como IPv4 e/ou IPv6. Como os roteadores lidam com isso?**
 
